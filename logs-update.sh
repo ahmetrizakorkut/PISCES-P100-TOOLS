@@ -12,4 +12,4 @@ mv logs.php logs.php.bak
 wget https://raw.githubusercontent.com/ahmetrizakorkut/PISCES-P100-TOOLS/main/logs.php -O logs.php
 echo "-----------------"
 echo "::::::::::: The operation is successful. You can now refresh your Log page.:::::::::::::::::::::"
-echo "-----------------"
+echo "Thanks.."
