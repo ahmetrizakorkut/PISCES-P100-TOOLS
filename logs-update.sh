@@ -6,10 +6,10 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 echo "::::::::::::  Updating Logs Page  :::::::::::::::::::::::::::::::::::"
-echo ""
+echo "-----------------"
 cd /var/dashboard/pages/
 mv logs.php logs.php.bak
 wget https://raw.githubusercontent.com/ahmetrizakorkut/PISCES-P100-TOOLS/main/logs.php -O logs.php
-echo ""
+echo "-----------------"
 echo "::::::::::: The operation is successful. You can now refresh your Log page.:::::::::::::::::::::"
-
+echo "-----------------"
