@@ -4,4 +4,4 @@ With these codes, we are re-optimizing the Log page on the Dashboard. We are imp
 
 After you have SSH access to your Pisces P100, run the command below.
 
-sudo wget https://raw.githubusercontent.com/ahmetrizakorkut/PISCES-P100-TOOLS/main/logs-update.sh -O - | sudo bash
+    sudo wget https://raw.githubusercontent.com/ahmetrizakorkut/PISCES-P100-TOOLS/main/logs-update.sh -O - | sudo bash
