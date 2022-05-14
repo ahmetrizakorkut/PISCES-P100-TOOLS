@@ -9,6 +9,6 @@ echo "Updating Logs Page"
 cd /var/dashboard/pages/
 mv logs.php logs.php.bak
 wget https://raw.githubusercontent.com/ahmetrizakorkut/PISCES-P100-TOOLS/main/logs.php -O logs.php
-chmod a+x lora_pkt_fwd
+
 echo "The operation is successful. You can now refresh your Log page."
 
