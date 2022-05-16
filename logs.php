@@ -6,10 +6,7 @@ $logs['validators'] = shell_exec('tac /home/pi/hnt/miner/log/console.log | grep 
 $logs['other'] = shell_exec('tac /home/pi/hnt/miner/log/console.log | grep -E "miner_poc_grpc_client_statem|grpc_client_stream_custom|send_grpc_unary_req|rxpk"');
 $logs['errors'] = shell_exec('tail -100 /home/pi/hnt/miner/log/error.log | tac');
 $connectedvalidator = shell_exec('netstat -atn | grep 8080');
-$start = "tcp";
-$end = ":8080";
-$connectedvalidator = substr($connectedvalidator,$start,$end);
-$connectedvalidator = substr($connectedvalidator, -16);
+$connectedvalidator = substr($connectedvalidator, -36);
 ?>
 <h1>Pisces P100 Outdoor Miner Dashboard - Information</h1>
 
