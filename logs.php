@@ -9,7 +9,7 @@ $connectedvalidator = shell_exec('netstat -atn | grep 8080');
 $start = "tcp";
 $end = ":8080";
 $connectedvalidator = substr($connectedvalidator,$start,$end);
-$connectedvalidator = substr($connectedvalidator, -16)
+$connectedvalidator = substr($connectedvalidator, -16);
 ?>
 <h1>Pisces P100 Outdoor Miner Dashboard - Information</h1>
 
