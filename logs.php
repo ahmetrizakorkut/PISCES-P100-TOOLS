@@ -7,6 +7,7 @@ $logs['other'] = shell_exec('tac /home/pi/hnt/miner/log/console.log | grep -E "m
 $logs['errors'] = shell_exec('tail -100 /home/pi/hnt/miner/log/error.log | tac');
 $connectedvalidator = shell_exec('netstat -atn | grep 8080');
 $connectedvalidator = substr($connectedvalidator, -36);
+$logs['beacon'] = shell_exec('tac /home/pi/hnt/miner/log/console.log | grep -E "tx_power_corrected|tx_power|TX_POWER"');
 ?>
 <h1>Pisces P100 Outdoor Miner Dashboard - Information</h1>
 
@@ -19,6 +20,11 @@ $connectedvalidator = substr($connectedvalidator, -36);
 <div class="log_container">
         <h2>Witness Logs</h2>
         <div class="wrapper"><textarea class="log_output" wrap="off"><?php echo $logs['witnesses']; ?></textarea></div>
+</div>
+
+<div class="log_container">
+        <h2>Beacon Logs</h2>
+        <div class="wrapper"><textarea class="log_output" wrap="off"><?php echo $logs['beacon']; ?></textarea></div>
 </div>
 
 <div class="log_container">
